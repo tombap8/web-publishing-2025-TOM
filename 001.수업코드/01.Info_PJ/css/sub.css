@@ -3,40 +3,63 @@
 
 /* 2-1. 서브타이틀 */
 .sub-title {
-  /* 서브타이틀 폰트 */
-  font-family: "Jua", sans-serif;
-  /* 서브타이틀 크기 */
-  font-size: 30px;
-  /* 서브타이틀 색상 */
-  color: #333;
-  /* 서브타이틀 정렬 */
-  text-align: center;
-  /* 서브타이틀 마진 */
-  margin: 20px 0;
-  /* 서브타이틀 패딩 */
+    /* 글자설정 */
+    font-family: "Jua", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    /* 글자 테두리 */
+    -webkit-text-stroke: .1px #000;
+    /* 박스설정 */
+    margin: 20px 0;
     padding: 50px;
-  /* 서브타이틀 배경 */
-  background: url(../images/titbg4.jpg) no-repeat center/cover;
+    /* 배경설정정 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background: url(../images/titbg4.jpg) no-repeat center/cover; */
 }
+
+/* 서브별 구분 글자 및 배경 */
+/* (1)경제 */
+.economy {
+    color: #ff8c00;
+    background-image: url(../images/titbg2.jpg);
+}
+/* (2)사회 */
+.society {
+    color: #ff0000;
+    background-image: url(../images/titbg3.jpg);
+}
+/* (3)IT/과학 */
+.science {
+    color: lightgreen;
+    background-image: url(../images/titbg4.jpg);
+}
+/* (4)TV/연예 */
+.tv {
+    color: lightpink;
+    background-image: url(../images/titbg5.jpg);
+}
+
 /* 2-2. 언론사로고 */
-.press-logo img{
+.press-logo img {
     height: 32px;
 }
 /* 2-3. 기사제목 */
-.article-title{
+.article-title {
     font-size: 33px;
 }
 /* 2-4. 기사사진 */
-.article-picture{
+.article-picture {
     margin: 0;
     padding: 0;
     text-align: center;
 }
-.article-picture img{
+.article-picture img {
     width: 100%;
 }
 /* 2-5. 기사내용 */
-.article-content{
+.article-content {
     font-size: 18px;
     /* 줄간격 : 단위없는 숫자값은 배수임임 */
     line-height: 2;
@@ -48,7 +71,7 @@
     /* 박스 설정 */
     padding: 10px 50px;
     background: #ebebeb;
-    margin: 0 30px;
+    margin: 17px 30px;
     border-top: 2px solid gray;
     border-bottom: 2px solid gray;
     /* 글자 설정 */
@@ -61,13 +84,15 @@
     font-size: 16px;
     color: #666;
     margin-top: 10px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 /* 2-7. 기사원문 */
 .article-original {
     margin-top: 20px;
     text-align: right;
 }
-.article-original a{
+.article-original a {
     /* 인라인블록 - 디자인적용위해변경 */
     display: inline-block;
     /* 크기 */
