@@ -5,3 +5,110 @@
 @import url(./core.css);
 @import url(./reset.css);
 
+/* 초기화 */
+html,
+body {
+  /* 보이는 화면만큼 높이값 셋팅 */
+  height: 100%;
+}
+
+/* 공사중 표시 */
+/* body *,
+*::before,
+*::after {
+  outline: 2px dashed yellow;
+} */
+
+body {
+  /* 배경이미지(고정fixed) */
+  background: url(../images/bg.jpg)
+    no-repeat fixed top/cover;
+  /* 커서 이미지로 변경하기 */
+  cursor: url(../images/favicon.png),
+    auto;
+}
+
+.head{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 50px auto;
+}
+/* 로봇머리 하위 공통 앱솔루트 */
+.head > div {
+  position: absolute;
+}
+/* 눈공통 */
+.eye {
+  /* position: absolute; */
+  top: 50px;
+  /* 나의 부모는? .head */
+  width: 50px;
+  height: 50px;
+  /* 배경공통 */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* 원형셋팅 */
+  border-radius: 50%;
+}
+/* 왼눈 */
+.eye1 {
+  /* 개별위치값 */
+  left: 16%;
+  /* 이미지만 변경 */
+  background-image: url(../images/e1.jpg);
+}
+/* 오른눈 */
+.eye2 {
+  /* 개별위치값 */
+  right: 16%;
+  /* 이미지만 변경 */
+  background-image: url(../images/e2.jpg);
+}
+/* 코 */
+.nose {
+  top: 100px;
+  /* 가로방향 중앙이동설정
+  -> left 절반밀고 자신크기절반 반대로이동 */
+  left: 50%;
+  translate: -50%;
+
+  width: 50px;
+  height: 70px;
+  background: url(../images/nose.jpg)
+    no-repeat 0/110% 100%;
+  border-radius: 20px;
+}
+/* 입 */
+.mouth {
+  bottom: 10%;
+  /* 가로방향 중앙이동설정
+  -> left 절반밀고 자신크기절반 반대로이동 */
+  left: 50%;
+  translate: -50%;
+
+  width: 90px;
+  height: 40px;
+  background: url(../images/mouth.png)
+    no-repeat 0/100% 100%;
+}
+/* 귀공통 */
+.ear {
+  top: 80px;
+  width: 50px;
+  height: 80px;
+}
+/* 왼귀 */
+.ear1 {
+  /* 왼쪽바깥위치 */
+  left: -50px;
+  /* 왼위,아래만 둥근모서리 */
+  border-radius: 20px 0 0 20px;
+}
+/* 오른귀 */
+.ear2 {
+  /*치오른쪽바깥위치 */
+  right: -50px;
+  /* 오른위,아래만 둥근모서리 */
+  border-radius: 0 20px 20px 0;
+}
