@@ -2,9 +2,91 @@
 /* Info PJ 서브페이지용 CSS - sub.css */
 
 /* 2-1. 서브타이틀 */
+.sub-title {
+  /* 서브타이틀 폰트 */
+  font-family: "Jua", sans-serif;
+  /* 서브타이틀 크기 */
+  font-size: 30px;
+  /* 서브타이틀 색상 */
+  color: #333;
+  /* 서브타이틀 정렬 */
+  text-align: center;
+  /* 서브타이틀 마진 */
+  margin: 20px 0;
+  /* 서브타이틀 패딩 */
+    padding: 50px;
+  /* 서브타이틀 배경 */
+  background: url(../images/titbg4.jpg) no-repeat center/cover;
+}
 /* 2-2. 언론사로고 */
+.press-logo img{
+    height: 32px;
+}
 /* 2-3. 기사제목 */
+.article-title{
+    font-size: 33px;
+}
 /* 2-4. 기사사진 */
+.article-picture{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.article-picture img{
+    width: 100%;
+}
 /* 2-5. 기사내용 */
+.article-content{
+    font-size: 18px;
+    /* 줄간격 : 단위없는 숫자값은 배수임임 */
+    line-height: 2;
+}
+/* mark태그 디자인 변경 */
+.article-content mark {
+    /* 블록으로 변경경 */
+    display: block;
+    /* 박스 설정 */
+    padding: 10px 50px;
+    background: #ebebeb;
+    margin: 0 30px;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    /* 글자 설정 */
+    font-family: "Nanum Pen Script", cursive;
+    font-size: 30px;
+    color: darkorange;
+}
 /* 2-6. 기자정보 */
+.reporter-info {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
 /* 2-7. 기사원문 */
+.article-original {
+    margin-top: 20px;
+    text-align: right;
+}
+.article-original a{
+    /* 인라인블록 - 디자인적용위해변경 */
+    display: inline-block;
+    /* 크기 */
+    width: 120px;
+    height: 120px;
+    /* 글자설정 */
+    color: #fff;
+    line-height: 120px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    /* 배경설정 */
+    background-color: gray;
+    /* 테두리설정 */
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+/* 기사원문 마우스 오버시시 */
+.article-original a:hover {
+    background-color: #ff0;
+    color: #000;
+}
