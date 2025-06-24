@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+/* Robot PJ : 공통모듈 CSS - common.css */
+
+/************** 상단 영역 전체 **************/
+#top-area {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #0000006b; /* 검정색 배경 */
+    padding: 20px 0;
+}
+
+/* header: 최대 너비 1200px, 중앙 정렬, Flex로 내부 정렬 */
+.top-area {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* 로고 왼쪽, 메뉴 오른쪽 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+/* 로고 영역 */
+.logo img {
+    height: 100px; /* 이미지 높이 제한 */
+}
+
+/* 메뉴 영역 */
+.nav-menu ul {
+    display: flex; /* 가로로 나열 */
+    gap: 30px; /* 메뉴 간 간격 */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #00ffff; /* 호버 시 포인트 컬러 예시 */
+}
+
+/****************** 하단 영역 ******************/
+.bottom-area {
+  background-color: #00000080;  /* 검정 배경 */
+  color: #fff;             /* 흰색 글자 */
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* 공통: ul 스타일 초기화 */
+.bottom-area ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bottom-area a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.bottom-area a:hover {
+  color: #00ffff;
+}
+
+/* 회사 정보 */
+.company-info p {
+  margin: 8px 0;
+}
+
+/* 빠른 링크, 법적 정보, 팔로우 영역 공통 스타일 */
+.quick-links ul,
+.legal ul,
+.follow-us ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* 뉴스레터 영역 */
+.newsletter p {
+  margin-bottom: 10px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.newsletter input[type="email"] {
+  flex: 1;
+  min-width: 200px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  padding: 8px 16px;
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: #00cccc;
+}

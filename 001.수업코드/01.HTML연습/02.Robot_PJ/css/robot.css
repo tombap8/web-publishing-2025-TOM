@@ -4,9 +4,10 @@
 /* 외부 CSS합치기 */
 @import url(./core.css);
 @import url(./reset.css);
+@import url(./common.css);
 
 /* 전체 배경넣기 */
-body{
+body {
     /* background: 색 이 반 고 윙/크 */
     background: url(../images/bg.jpg) no-repeat fixed center top/cover;
     /* 커서 이미지로 변경하기 */
@@ -14,14 +15,16 @@ body{
     /* cursor: url(이미지경로), 대체모양설정 */
 }
 
-/* 로봇 전체박스 */
+
+
+/************* 로봇 전체박스 *************/
 .robot-box {
     /* 로봇 다리를 위한 하단패딩 */
     padding-bottom: 700px;
 }
 
 /* 로봇머리 */
-.head{
+.head {
     /* 부모자격필요! */
     position: relative;
     width: 250px;
@@ -30,12 +33,12 @@ body{
     margin: 100px auto 50px;
 }
 /* 눈공통 */
-.eye{
+.eye {
     /* 원형눈 */
     border-radius: 50%;
 }
 /* 왼눈 */
-.eye1{
+.eye1 {
     position: absolute;
     /* 부모는? .head */
     top: 50px;
@@ -46,19 +49,19 @@ body{
     background: url(../images/e1.jpg) no-repeat 0/100% 100%;
 }
 /* 오른눈 */
-.eye2{
+.eye2 {
     position: absolute;
     /* 부모는? .head */
     top: 50px;
     right: 50px;
-    
+
     width: 50px;
     height: 50px;
     background: url(../images/e2.jpg) no-repeat 0/100% 100%;
 }
 
 /* 코 */
-.nose{
+.nose {
     position: absolute;
     top: 96px;
     left: 100px;
@@ -72,7 +75,7 @@ body{
 }
 
 /* 입 */
-.mouth{
+.mouth {
     position: absolute;
     bottom: 25px;
     left: 80px;
@@ -83,7 +86,7 @@ body{
 }
 
 /* 왼귀 */
-.ear1{
+.ear1 {
     position: absolute;
     top: 87px;
     left: -50px;
@@ -92,7 +95,7 @@ body{
     height: 80px;
 }
 /* 오른귀 */
-.ear2{
+.ear2 {
     position: absolute;
     top: 87px;
     right: -50px;
@@ -102,7 +105,7 @@ body{
 }
 
 /* 로봇몸 */
-.body{
+.body {
     /* 부모자격이 필요! */
     position: relative;
     width: 180px;
@@ -112,7 +115,7 @@ body{
 }
 
 /* 목 */
-.neck{
+.neck {
     position: absolute;
     /* 부모는? .body */
     top: -50px;
@@ -122,23 +125,23 @@ body{
     height: 50px;
 }
 /* 팔공통 */
-.arm{
+.arm {
     position: absolute;
     /* 부모는? .body */
     width: 50px;
     height: 180px;
 }
 /* 왼팔 */
-.arm1{
+.arm1 {
     left: -50px;
 }
 /* 오른팔 */
-.arm2{
+.arm2 {
     right: -50px;
 }
 
 /* 팔하단공통 */
-.arm span{
+.arm span {
     position: absolute;
     /* 부모는? .arm */
     top: 100%;
@@ -149,7 +152,7 @@ body{
 }
 
 /* 다리공통 */
-.leg{
+.leg {
     position: absolute;
     /* 부모는? .body */
     top: 100%;
@@ -158,12 +161,12 @@ body{
     height: 260px;
 }
 /* 오른다리 */
-.leg2{
+.leg2 {
     right: 0;
 }
 
 /* 다리하단 공통 */
-.leg span{
+.leg span {
     position: absolute;
     /* 부모는? .leg */
     top: 100%;
@@ -174,7 +177,7 @@ body{
 }
 
 /* 로봇 TV */
-.tv{
+.tv {
     position: absolute;
     /* 부모는? .body */
     top: 45px;
@@ -186,7 +189,7 @@ body{
     background: url(../images/tv.jpg) no-repeat 0/100% 100%;
 }
 /* 스크린 */
-.screen{
+.screen {
     position: absolute;
     /* 부모는? .tv */
     top: 12px;
@@ -197,3 +200,5 @@ body{
     background-color: red;
     border-radius: 10px;
 }
+
+
